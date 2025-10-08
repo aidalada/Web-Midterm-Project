@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventPro | Events</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/events.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">EventPro</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link active" href="events.html">Events</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header text-center py-5 bg-light">
+            <div class="container">
+                <h1 class="display-4">Find Your Next Event</h1>
+                <p class="lead">Browse our catalog of upcoming conferences, workshops, and festivals.</p>
+            </div>
+        </section>
+
+        <section class="events-list-section py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" placeholder="Search by name...">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select">
+                            <option selected>All Categories</option>
+                            <option value="1">Conferences</option>
+                            <option value="2">Music</option>
+                            <option value="3">Masterclasses</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="event-list">
+                    <div class="event-list-item card mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imgs/DigitalBridge2025.jpg" class="img-fluid rounded-start" alt="Event cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Digital Bridge 2025</h5>
+                                    <p class="card-text"><small class="text-muted">📅 November 15-17, 2025 | 📍 Expo, Astana</small></p>
+                                    <p class="card-text">The biggest IT event of the year. Speakers from leading companies, workshops, and networking.</p>
+                                    <a href="#" class="btn btn-primary">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-list-item card mb-4">
+                         <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imgs/crmconf.jpg" class="img-fluid rounded-start" alt="Event cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">"CRM Conference</h5>
+                                    <p class="card-text"><small class="text-muted">📅 July 25-27, 2025 | 📍 Astana, Kazakhstan</small></p>
+                                    <p class="card-text">An annual, large-scale online event hosted by Bitrix24 Kazakhstan for entrepreneurs from across Central Asia.</p>
+                                    <a href="#" class="btn btn-primary">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-list-item card mb-4">
+                         <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imgs/finnext.jpg" class="img-fluid rounded-start" alt="Event cover">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">FINNEXT Asia</h5>
+                                    <p class="card-text"><small class="text-muted">📅 December 1, 2025 | 📍 Tashkent</small></p>
+                                    <p class="card-text">International Forum of Financial Innovations FINNEXT Asia 2025.</p>
+                                    <a href="#" class="btn btn-primary">Sign Up</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="mt-5">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">&copy; 2025 EventPro. All rights reserved.</p>
+            <div>
+                <a href="#" class="text-white ms-2">Privacy Policy</a>
+                <a href="#" class="text-white ms-2">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
