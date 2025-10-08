@@ -1,23 +1,18 @@
-/* --- Стили для страницы "Мероприятия" --- */
-
 .event-list-item.card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* Добавляем небольшой эффект при наведении для интерактивности */
 .event-list-item.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .event-list-item .card-title {
-    color: #0d6efd; /* Делаем заголовок синим, как основная кнопка */
+    color: #0d6efd; 
 }
 
-/* Стили для мобильной версии картинки в карточке */
 @media (max-width: 767px) {
     .event-list-item .rounded-start {
-        /* Убираем скругление только с левой стороны и делаем его сверху */
         border-top-left-radius: var(--bs-card-inner-border-radius) !important;
         border-top-right-radius: var(--bs-card-inner-border-radius) !important;
         border-bottom-left-radius: 0 !important;
