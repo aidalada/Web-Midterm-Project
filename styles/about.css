@@ -13,7 +13,7 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding-top: 80px; /* Добавляем отступ сверху для изображения */
+    padding-top: 80px; 
     margin-top: 80px;
 }
 
@@ -21,7 +21,6 @@
     font-weight: 700;
 }
 
-/* Новый, исправленный код */
 .team {
-    padding-bottom: 100px !important; /* Добавляем !important */
+    padding-bottom: 100px !important; 
 }   
