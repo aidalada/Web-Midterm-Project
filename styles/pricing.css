@@ -1,0 +1,19 @@
+/* --- Стили для страницы "Тарифы" --- */
+
+.pricing-table-section .table {
+    vertical-align: middle; /* Вертикальное выравнивание по центру ячеек */
+    font-size: 0.95rem;
+}
+
+.pricing-table-section .table thead th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pricing-table-section .table th[scope="row"] {
+    font-weight: 600;
+}
+
+.pricing-table-section .table-group-divider {
+    border-top: 2px solid currentColor; /* Делаем разделитель более заметным */
+}

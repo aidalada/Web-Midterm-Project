@@ -1,0 +1,77 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 56px; /* Отступ для контента из-за фиксированной навигации */
+}
+
+
+.hero-section {
+    background: url('../imgs/events.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative; /* Нужно для псевдоэлемента-оверлея */
+    padding: 10rem 0;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+}
+
+
+.events-grid {
+    display: grid;
+    /* Три колонки на больших экранах */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Пространство между карточками */
+}
+
+
+/* --- Брейкпоинт для планшетов --- */
+@media (max-width: 992px) {
+    .events-grid {
+        /* Две колонки на планшетах */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 6rem 0; /* Уменьшаем отступы на маленьких экранах */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem; /* Уменьшаем размер заголовка */
+    }
+
+    .events-grid {
+        /* Одна колонка на мобильных */
+        grid-template-columns: 1fr;
+    }
+
+    /* В футере элементы встанут друг под друга и будут по центру */
+    footer .container {
+       flex-direction: column;
+       text-align: center;
+    }
+    footer p {
+        margin-bottom: 1rem;
+    }
+}
+
+.events-grid .card .card-img-top {
+    width: 100%;      /* Ширина картинки всегда 100% карточки */
+    height: 220px;    /* Задаем всем картинкам ОДИНАКОВУЮ высоту */
+    object-fit: cover; /* Масштабирует картинку, чтобы она заполнила
+                          пространство, сохраняя пропорции.
+                          Лишнее обрежется, искажений не будет. */
+}
