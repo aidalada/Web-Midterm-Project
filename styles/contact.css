@@ -1,5 +1,3 @@
-/* --- Стили для страницы "Контакты" --- */
-
 .contact-info p {
     font-size: 1.1rem;
     display: flex;
@@ -9,5 +7,5 @@
 
 .contact-info i {
     font-size: 1.5rem;
-    color: #0d6efd; /* Синий цвет в тон к кнопке */
+    color: #0d6efd; 
 }
